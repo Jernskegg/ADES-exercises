@@ -21,7 +21,7 @@ int main(){
             continue;
         }
 
-        if (is_new_word) {
+        if (is_new_word && !isblank(letter)) {
             letter = toupper(letter);
             is_new_word = 0;
         } else {
