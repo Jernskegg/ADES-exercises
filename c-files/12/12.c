@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int input(){
     int input_number;
-    int total_number = 0;
-
     do {
         
         printf("Write a positive number: ");
@@ -20,7 +18,12 @@ int main(){
         };
 
     } while (1);
-    
+    return input_number;
+}
+
+int main(){
+    int input_number = input();
+    int total_number = 0;
 
     for (int i = 0; i <= input_number; i+=2){
         total_number += i; 
